@@ -5,6 +5,7 @@ Google, Facebook, Twitter, Yahoo, and Bing are constantly trying to view your we
 
 Behind the scenes, Prerender is a node server from [prerender.io](http://prerender.io) that uses phantomjs to create static HTML out of a javascript page. We host this as a service at [prerender.io](http://prerender.io) but we also open sourced it because we believe basic SEO is a right, not a privilege!
 
+
 It should be used in conjunction with [these middleware libraries](#middleware) to serve the prerendered HTML to crawlers for SEO. Get started in two lines of code using [Rails](https://github.com/prerender/prerender_rails) or [Node](https://github.com/prerender/prerender-node).
 
 Prerender adheres to google's `_escaped_fragment_` proposal, which we recommend you use. It's easy:
@@ -14,6 +15,9 @@ Prerender adheres to google's `_escaped_fragment_` proposal, which we recommend 
 
 Prerender includes lots of plugins, for example using Amazon S3 to [cache your prerendered HTML](#s3-html-cache).  
 Prerender also starts multiple phantomjs processes to maximize throughput.
+
+
+
 
 
 ### <a id='middleware'></a>
